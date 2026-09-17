@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 50px auto;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.calculator {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+.results {
+    margin-top: 35px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.card span {
+    display: block;
+    color: #777;
+    font-size: 13px;
+}
+
+.card strong {
+    display: block;
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.card small {
+    color: #999;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
